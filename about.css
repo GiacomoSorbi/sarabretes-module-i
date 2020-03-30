@@ -73,17 +73,23 @@ p {
   font-weight: bold;
 }
 .tableInfo tr:nth-child(odd) td:nth-child(even) {
-  padding: 20px 10px 0px 10px;
+  padding: 20px 10px 0px 20px;
 }
-.tableInfo tr:nth-child(3n + 3) {
-  border-top: 1px solid #ffcde0;
+.tableInfo tr:nth-child(even) {
+  border-bottom: 1px solid #ffcde0;
 }
 
 .tableInfo tr td {
   border-collapse: collapse;
-  padding: 20px 10px 20px 15px;
+  padding: 20px 10px 20px 20px;
 }
 
+.tableInfo li {
+  font-size: 14px;
+}
+.tableInfo ul {
+  padding-left: 10px;
+}
 /*end of table styles*/
 
 /* Styles for Desktop and Big tablets*/
@@ -91,10 +97,9 @@ p {
   #education,
   #workExperience {
     display: inline-block;
-    width: 45%;
+    width: 45%; /* 50% each container minus the margin between containers*/
   }
-
-  .tableInfo {
-    margin-right: 50px;
+  #workExperience {
+    margin-right: 40px;
   }
 }
