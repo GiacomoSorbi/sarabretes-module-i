@@ -6,144 +6,95 @@ p {
   font-size: 14px;
 }
 
-/* Styles for Mobile */
-
-/* Styles for Tablet */
-
-@media screen and (min-width: 768px) {
-  #education,
-  #workExperience {
-    display: block;
-    position: relative;
-    width: 80%;
-    margin: 0 auto;
-  }
-  .titleWithIcon {
-    text-align: left;
-    margin-bottom: 50px;
-  }
-  #education h2,
-  #workExperience h2,
-  .fas {
-    display: inline-block;
-  }
-
-  #experience .fas {
-    font-size: 30px;
-    margin-right: 20px;
-    color: #c02e64;
-    vertical-align: top;
-    position: relative;
-  }
-
-  #experience {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    width: 90%;
-    padding: 100px 120px 100px 120px;
-  }
-
-  .tableInfo {
-    border: 1px solid #ffcde0;
-    margin-right: 50px;
-    padding: 20px 10px 20px 20px;
-    line-height: 25px;
-  }
-
-  .tableInfo td {
-    vertical-align: top;
-  }
-
-  .tableInfo td:first-child {
-    width: 25%;
-    padding-right: 25px;
-  }
-  .tableInfo td:last-child {
-    width: 60%;
-  }
-
-  .tableInfo h4 {
-    margin-bottom: 20px;
-    color: #003a51;
-  }
-
-  .date {
-    margin-top: 10px;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .tableInfo td:nth-child(even) p:last-child {
-    margin-top: 15px;
-  }
+/* Styles for Mobile and small tablets*/
+#education,
+#workExperience {
+  display: block;
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+}
+.titleWithIcon {
+  text-align: left;
+  margin-bottom: 50px;
 }
 
-/* Styles for Desktop */
+#education h2,
+#workExperience h2,
+.fas {
+  display: inline-block;
+}
+#experience .fas {
+  font-size: 30px;
+  margin-right: 20px;
+  color: #c02e64;
+  vertical-align: top;
+  position: relative;
+}
 
-@media screen and (min-width: 1200px) {
+#experience {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  width: 80%;
+  padding: 100px 50px 100px 50px;
+}
+
+/*table styles*/
+
+.tableInfo {
+  line-height: 25px;
+}
+
+.tableInfo table {
+  border-collapse: collapse;
+
+  border: 1px solid #ffcde0;
+}
+
+.tableInfo td {
+  vertical-align: top;
+}
+
+.tableInfo td:first-child {
+  width: 25%;
+}
+.tableInfo td:last-child {
+  width: 60%;
+}
+
+.tableInfo h4 {
+  color: #003a51;
+}
+
+.date {
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.tableInfo tr:nth-child(odd) td:nth-child(even) {
+  padding: 20px 10px 0px 10px;
+}
+.tableInfo tr:nth-child(3n + 3) {
+  border-top: 1px solid #ffcde0;
+}
+
+.tableInfo tr td {
+  border-collapse: collapse;
+  padding: 20px 10px 20px 10px;
+}
+
+/*end of table styles*/
+
+/* Styles for Desktop and Big tablets*/
+@media only screen and (min-width: 800px) {
   #education,
   #workExperience {
     display: inline-block;
-    position: relative;
     width: 45%;
-    margin: 0 auto;
-  }
-  .titleWithIcon {
-    text-align: left;
-    margin-bottom: 50px;
-  }
-  #education h2,
-  #workExperience h2,
-  .fas {
-    display: inline-block;
-  }
-
-  #experience .fas {
-    font-size: 30px;
-    margin-right: 20px;
-    color: #c02e64;
-    vertical-align: top;
-    position: relative;
-  }
-
-  #experience {
-    display: block;
-    position: relative;
-    margin: 0 auto;
-    width: 90%;
-    padding: 100px 120px 100px 120px;
   }
 
   .tableInfo {
-    border: 1px solid #ffcde0;
     margin-right: 50px;
-    padding: 20px 10px 20px 20px;
-    line-height: 25px;
-  }
-
-  .tableInfo td {
-    vertical-align: top;
-  }
-
-  .tableInfo td:first-child {
-    width: 25%;
-    padding-right: 25px;
-  }
-  .tableInfo td:last-child {
-    width: 60%;
-  }
-
-  .tableInfo h4 {
-    margin-bottom: 20px;
-    color: #003a51;
-  }
-
-  .date {
-    margin-top: 10px;
-    font-size: 14px;
-    font-weight: bold;
-  }
-  .tableInfo td:nth-child(even) p:last-child {
-    margin-top: 15px;
   }
 }
