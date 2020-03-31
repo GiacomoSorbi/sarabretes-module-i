@@ -13,6 +13,7 @@ p {
   position: relative;
   width: 80%;
   margin: 0 auto;
+ 
 }
 .titleWithIcon {
   text-align: left;
@@ -44,6 +45,7 @@ p {
 
 .tableInfo {
   line-height: 25px;
+ 
 }
 
 .tableInfo table {
@@ -98,8 +100,22 @@ p {
   #workExperience {
     display: inline-block;
     width: 45%; /* 50% each container minus the margin between containers*/
+    display: flex;
+    flex-direction: column;
   }
   #workExperience {
     margin-right: 40px;
+  }
+
+  #experience {
+    display: flex;
+  }
+
+  .tableInfo table {
+    height: 100%;
+  }
+
+  .tableInfo {
+    flex: 1;
   }
 }
