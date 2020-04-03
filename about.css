@@ -24,6 +24,8 @@ p {
 #tools .titleWithIcon {
   margin-top: 0px;
 }
+
+
 #education h2,
 #workExperience h2,
 #tools h2,
@@ -117,9 +119,9 @@ p {
 
 
 /*Loading Skill Bars styles*/
-#tools table { 
-  display: inline-block;
-  width: 40% ;
+#tools ul { 
+ 
+  width: 80%;
   position: relative;
   margin: 0 auto;
  }
@@ -338,18 +340,15 @@ li#eloqua:after {
     margin-top:0px;
   }
 
- #tools table { 
-    display: block;
-    width: 80%;
-   } 
+ 
 
   #tools table:first-of-type {
      margin-right:40px;
    }
 
-   #tools {
-    width: 80%;
-    margin: 20px auto 100px auto;
-    padding:20px;
+   #tools  ul{
+    width: 45%;
+    display: inline-block;
+    
   }
 }
