@@ -39,12 +39,10 @@ p {
   font-size: 30px;
   margin-right: 20px;
   color: #c02e64;
-  vertical-align: top;
   position: relative;
 }
 
 #experience {
-  display: block;
   position: relative;
   margin: 0 auto;
   width: 80%;
@@ -112,9 +110,10 @@ p {
 
 
 #tools {
-  width: 80%;
-  margin: 0px auto 0px auto;
-  padding:20px;
+width: 80%;
+padding:100px 50px 100px 50px;
+margin: 0 auto;
+ 
 }
 
 
@@ -340,15 +339,27 @@ li#eloqua:after {
     margin-top:0px;
   }
 
+ #tools {
+  
+  width: 80%;
  
+ }
 
   #tools table:first-of-type {
      margin-right:40px;
    }
 
-   #tools  ul{
-    width: 45%;
+   #left, #right{
+    width: 40%;
     display: inline-block;
-    
+    margin: 0 auto;
+  }
+ 
+  #tools > git table {
+    width: 100%;
+    padding-left:0px
+  }
+  #tools li {
+    width: 100%;
   }
 }
