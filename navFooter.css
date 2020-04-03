@@ -22,6 +22,11 @@ nav div {
 	padding: 10px 10px;
 	margin: 16px 16px;
 }
+
+nav div > a {
+	color: #003a51;
+	text-decoration: none;
+}
 .fa-bars {
 	padding: 10px 10px;
 	margin: 16px 16px;
@@ -91,6 +96,28 @@ footer #social a {
 	margin: 0 auto;
 	width: 5%;
 }
+
+
+/* Button styles */
+
+.btn{
+	width: 50%;
+	display: block;
+	position: relative;
+	text-transform: uppercase;
+	margin: 0 auto;
+	text-align: center;
+	background-color: #003a51;
+	padding:20px 20px;
+	color: #ffffff;
+	font-weight: bold;
+	border-radius:5px;
+}
+
+.btn a{
+	color: #ffffff;
+	text-decoration: none;
+}
 /* Styles for Tablet */
 
 @media screen and (min-width: 768px) {
@@ -127,6 +154,7 @@ footer #social a {
 	.menus li:hover a {
 		color: #c02e64;
 	}
+
 }
 /* Styles for Desktop */
 
@@ -164,4 +192,8 @@ footer #social a {
 	.menus li:hover a {
 		color: #c02e64;
   }
+
+  .btn {
+	width: 25%;
+}
 }

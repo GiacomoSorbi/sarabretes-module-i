@@ -13,15 +13,15 @@ p {
 	margin: 0 auto;
 }
 .titleWithIcon {
-	text-align: left;
+	
 	margin-bottom: 50px;
 	margin-top: 80px;
 }
-#education h2, #workExperience h2, #tools h2, .fas {
+#education h2, #workExperience h2, #tools h2, .fas, #fullCv h2 {
 	display: inline-block;
 	text-transform: uppercase;
 }
-#experience .fas, #tools .fas {
+#experience .fas, #tools .fas, #fullCv .fas {
 	font-size: 30px;
 	margin-right: 20px;
 	color: #c02e64;
@@ -79,7 +79,7 @@ p {
 
 #tools {
 	width: 80%;
-	padding: 0px 50px 100px 50px;
+	padding: 100px 50px 100px 50px;
 	margin: 0 auto;
 }
 #tools .titleWithIcon {
@@ -239,6 +239,28 @@ li#eloqua:after {
 	}
 }
 /*end of Loading Skill Bars styles*/
+
+
+/* Full CV Styles */
+#fullCv {
+	background-color: #fee3ed;
+	padding:50px 50px 100px 50px;
+}
+
+#fullCv h4  {
+	text-align: center;
+    font-weight: normal;
+    margin-bottom: 60px;
+    margin-top: 0;
+}
+
+#fullCv .titleWithIcon {
+	margin:0 auto;
+	position: relative;
+	display: block;
+	text-align: center;
+}
+/* End Of Full CV Styles */
 
 /* Styles for Desktop and Big tablets*/
 
