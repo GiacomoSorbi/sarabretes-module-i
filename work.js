@@ -1,9 +1,10 @@
-function showOptions() {
+
+function showOptions(e) {
     let options = document.getElementsByClassName("filterOptions");
     let projectAreaSection = document.getElementById("ProjectArea");
     let toolsUsedSection = document.getElementById("toolsUsed")
 
-
+    console.log(e);
 
 
     for (let i = 0; i < options.length; i++) {
