@@ -15,13 +15,12 @@ function showOptions() {
                 case 'tools':
                     toolsUsedSection.style.display = "block";
                     break;
-
-                //question: if all the switch statments are true, meaning all checkboxes are seleted, how do I add that in the switch? 
+                // questions: if all the swiches above are true, how can I add another case that matches that?
+                // how can I see the tick/untick display immediately? currently if I untick a box the div is still there
 
             }
-
-
         }
+
 
     }
 
@@ -30,16 +29,37 @@ function showOptions() {
 
 
 
+}
 
 
 
 
 
 
+let checkOptions = [
+    {
+        name: "Project Area",
+        id: "area"
+    },
+    {
+        name: "tools",
+        id: "area",
+    },
+    {
+        name: "all",
+        id: "all"
+    }
+];
 
 
 
 
 
-
-
+    // if (options[0].checked) {
+    //    
+    // } if (options[1].checked) {
+    //     toolsUsedSection.style.display = "block";
+    // } if (projects[0].checked || projects[1].checked) {
+    //     projectAreaSection.style.display = "block"
+    //     toolsUsedSection.style.display = "block";
+    // }
