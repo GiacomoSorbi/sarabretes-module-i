@@ -41,9 +41,9 @@
         <h4>Filter by:</h4>
         <form>
             <input type="checkbox" id="area" class="filterOptions" name="Projects Area" value="Projects Area"
-                onclick="showOptions()">
+                onclick="showOptions(this)">
             <label for="area">Projects Area</label>
-            <input type="checkbox" id="tools" class="filterOptions" name="tools" value="tools" onclick="showOptions()">
+            <input type="checkbox" id="tools" class="filterOptions" name="tools" value="tools" onclick="showOptions(this)">
             <label for="tools"> Tools used</label>
             <input type="checkbox" id="all" class="filterOptions" name="all" value="all" onclick="showOptions()">
             <label for="all">Select All</label>
@@ -52,19 +52,19 @@
 
         <section id="filters">
             <div id="ProjectArea">
-                <h4>Email Design</h4>
-                <h4>Landing Pages</h4>
-                <h4>Graphic Design</h4>
-                <h4>User Interface</h4>
-                <h4>Animated Advertising</h4>
+                <h4 class="area filterItem">Email Design</h4>
+                <h4 class="area filterItem">Landing Pages</h4>
+                <h4 class="area filterItem">Graphic Design</h4>
+                <h4 class="area filterItem">User Interface</h4>
+                <h4 class="area filterItem">Animated Advertising</h4>
             </div>
             <div id="toolsUsed">
-                <h4>Photoshop</h4>
-                <h4>Illustrator</h4>
-                <h4>After Effects</h4>
-                <h4>Coda 2/ Visual Studio</h4>
-                <h4>Figma</h4>
-                <h4>Google Web Designer</h4>
+                <h4 class="tools filterItem">Photoshop</h4>
+                <h4 class="tools filterItem">Illustrator</h4>
+                <h4 class="tools filterItem">After Effects</h4>
+                <h4 class="tools filterItem">Coda 2/ Visual Studio</h4>
+                <h4 class="tools filterItem">Figma</h4>
+                <h4 class="tools filterItem">Google Web Designer</h4>
             </div>
     </div>
     </section>
