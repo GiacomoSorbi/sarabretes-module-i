@@ -43,9 +43,10 @@
             <input type="checkbox" id="area" class="filterOptions" name="Projects Area" value="Projects Area"
                 onclick="showOptions(this)">
             <label for="area">Projects Area</label>
-            <input type="checkbox" id="tools" class="filterOptions" name="tools" value="tools" onclick="showOptions(this)">
+            <input type="checkbox" id="tools" class="filterOptions" name="tools" value="tools"
+                onclick="showOptions(this)">
             <label for="tools"> Tools used</label>
-            <input type="checkbox" id="all" class="filterOptions" name="all" value="all" onclick="showOptions()">
+            <input type="checkbox" id="all" class="filterOptions" name="all" value="all" onclick="selectAll(this)">
             <label for="all">Select All</label>
         </form>
 
@@ -69,7 +70,10 @@
     </div>
     </section>
     <div class="workRow">
-        <div class="work">
+        <div class="work" id="work1">
+            <div class="workInfo">
+                <p><strong>Name:</strong> Carolina Christening</p>
+            </div>
 
         </div>
         <div class="work">
@@ -81,7 +85,7 @@
     </div>
     <footer>
         <p>Sara Bretes &copy; All rights Reserved</p>
-        <div id=" social">
+        <div id="social">
             <a href="https://twitter.com/Totinhas" target="_blank"><i class="fab fa-twitter"></i></a>
             <a href="https://www.linkedin.com/in/sarabretes/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
             <a href="https://www.behance.net/sarabretes" target="_blank"><i class="fab fa-behance"></i></a>
