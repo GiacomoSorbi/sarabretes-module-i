@@ -41,12 +41,12 @@
         <h4>Filter by:</h4>
         <form>
             <input type="checkbox" id="area" class="filterOptions" name="Projects Area" value="Projects Area"
-                onclick="showOptions(this)">
+                onclick="selectFilter(this)">
             <label for="area">Projects Area</label>
             <input type="checkbox" id="tools" class="filterOptions" name="tools" value="tools"
-                onclick="showOptions(this)">
+                onclick="selectFilter(this)">
             <label for="tools"> Tools used</label>
-            <input type="checkbox" id="all" class="filterOptions" name="all" value="all" onclick="selectAll(this)">
+            <input type="checkbox" id="all" class="selectAll" name="all" value="all" onclick="selectAll(this)">
             <label for="all">Select All</label>
         </form>
 
@@ -72,17 +72,48 @@
     <div class="workRow">
         <div class="work" id="work1">
             <div class="workInfo">
-                <p><strong>Name:</strong> Carolina Christening</p>
+                <p>Carolina Christening</p>
+                <p>Graphic Design</p>
             </div>
 
         </div>
-        <div class="work">
+        <div class="work" id="work2">
+            <div class="workInfo">
+                <p>Charles Stanley Adwords Animation</p>
+                <p>Animated Adversiting</p>
+            </div>
 
         </div>
-        <div class="work">
+        <div class="work" id="work3">
+            <div class="workInfo">
+                <p>Gender Pay Gap Report 2018</p>
+                <p>Graphic Design</p>
+            </div>
+
+        </div>
+        <div class="work" id="work4">
+            <div class="workInfo">
+                <p>Charles Stanley Direct Adwords Animation</p>
+                <p>Animated Adversiting</p>
+            </div>
+
+        </div>
+        <div class="work" id="work5">
+            <div class="workInfo">
+                <p>Charles Stanley Animated Gif</p>
+                <p>Animated Adversiting</p>
+            </div>
+
+        </div>
+        <div class="work" id="work6">
+            <div class="workInfo">
+                <p>Quotemehappy.com</p>
+                <p>User Interface</p>
+            </div>
 
         </div>
     </div>
+    
     <footer>
         <p>Sara Bretes &copy; All rights Reserved</p>
         <div id="social">

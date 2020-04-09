@@ -1,40 +1,37 @@
-
-let sectionFilters = document.getElementsByClassName("filterItem");
-function showOptions(e) {
-  // console.log(e.id);
-  let filterId = e.id;
+function toggleOptions(target) {
+  let filterId = target.id;
   let filterItems = document.querySelectorAll("." + filterId);
-  //console.log(filterId, filterItems);
   for (let i = 0; i < filterItems.length; i++) {
-    if (e.checked) {
+    if (target.checked) {
       filterItems[i].style.display = "inline-block";
     } else {
       filterItems[i].style.display = "none";
     }
   }
-
 }
 
-
-function selectAll() {
-  let filters = document.getElementsByClassName("filterOptions");
-  let checked = [];
-
-
-  let pink = document.getElementById('all')
-
-  for (let i = 0; i < filters.length; i++) {
-    if (filters[i].checked) {
-      checked.push(filters[i]);
-
+function selectFilter(target) {
+  let filterOptions = document.getElementsByClassName("filterOptions");
+  let selectAllOption = document.getElementById("all");
+  let count = 0;
+  for (let i = 0; i < filterOptions.length; i++) {
+    if (filterOptions[i].checked === true) {
+      count++;
     }
-    if ((checked.length) != filters.length) {
-      for (let a = 0; a < sectionFilters.length; a++) {
-        sectionFilters[a].style.display = "inline-block";
-      }
-
-    }
-
   }
+  if (count === filterOptions.length) {
+    selectAllOption.checked = true;
+  } else {
+    selectAllOption.checked = false;
+  }
+  toggleOptions(target);
+}
 
+function selectAll(target) {
+  let filterOptions = document.getElementsByClassName("filterOptions");
+
+  for (let i = 0; i < filterOptions.length; i++) {
+    filterOptions[i].checked = target.checked;
+    toggleOptions(filterOptions[i]);
+  }
 }

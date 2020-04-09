@@ -20,43 +20,44 @@ body {
 
 #filterSelector > h4 {
   margin-top: 20px;
- 
 }
 
-form {margin-bottom: 20px;}
+form {
+  margin-bottom: 20px;
+}
 
 h4 {
-  margin-top:5px;
+  margin-top: 5px;
   margin-right: 20px;
 }
 
 label {
   margin-right: 30px;
-  
 }
 
 .workRow {
-  padding: 100px 0px 100px 0px;
+  padding: 50px 0px 100px 0px;
   width: 80%;
   margin: 0 auto;
- 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-
-h4{
+h4 {
   font-weight: normal;
 }
 
-
-
-.work{
-  width: 100%;
- 
+.work {
   background-color: salmon;
   height: 50px;
-  display: inline-block;
+  position: relative;
+  flex-basis: 80%;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.47);
+  box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.47);
 }
-
 
 #work1 {
   background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/8479341.54778fe9c87bf.png);
@@ -64,29 +65,84 @@ h4{
   background-size: cover;
 }
 
-.workInfo{
-  background-color: rgba(0, 58, 81, 0.75);
-  width: 100%;
-  min-height: 50px;
+#work2 {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/c1bbfc68346787.Y3JvcCw5MDAsNzAzLDAsNTU2.png);
+  height: 300px;
+  background-size: cover;
+  background-position: right;
 }
 
-@media only screen and (min-width: 800px) {
+#work3 {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/c70e8168347095.Y3JvcCwyNDgwLDE5MzksMCww.png);
+  height: 300px;
+  background-size: cover;
+}
+
+#work4 {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/0bd51968348381.Y3JvcCw5NzksNzY2LDIxMCww.jpg);
+  height: 300px;
+  background-size: cover;
+}
+
+#work5 {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/17fbef68350195.Y3JvcCw4ODIsNjkwLDMwLDg1.jpg);
+  height: 300px;
+  background-size: cover;
+}
+
+#work6 {
+  background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/7594d472579253.Y3JvcCwxNTEzLDExODQsNjMsMA.jpg);
+  height: 300px;
+  background-size: cover;
+}
+
+.workInfo {
+  background-color: rgba(0, 58, 81, 0.9);
+  width: 100%;
+  min-height: 50px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.workInfo p:first-of-type {
+  padding: 20px 0px 5px 20px;
+  color: #ffffff;
+  margin: 0px;
+}
+
+.workInfo p:nth-of-type(2) {
+  margin: 0px;
+  padding: 0px 0px 20px 20px;
+  font-style: italic;
+  font-size: 12px;
+  color: #ffffff;
+}
+
+.tag {
+  margin-top: 0px;
+}
+@media only screen and (min-width: 768px) {
+  .work {
+    margin: 10px 20px;
+    flex-basis: 40%;
+  }
+}
+@media only screen and (min-width: 1100px) {
   #filterSelector {
     width: 50%;
   }
   #filterSelector h4:hover {
-   text-decoration: underline;
-   cursor: pointer;
-   color:#fee3ed;
+    text-decoration: underline;
+    cursor: pointer;
+    color: #fee3ed;
   }
 
-  .work{
-    width: 30%;
-    margin:10px 20px;
+  .work {
+    flex-basis: 25%;
+    margin: 10px 20px 80px 20px;
   }
-  
+
   .workRow {
-    padding: 100px 50px 100px 50px;
+    padding: 50px 50px 100px 50px;
   }
-  
 }
