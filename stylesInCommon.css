@@ -3,6 +3,7 @@ body {
   margin: 0px;
   padding: 0px;
   font-family: "Dosis", sans-serif;
+  height: 100%;
 }
 /* nav style */
 
@@ -80,6 +81,7 @@ footer {
   padding-top: 15px;
   padding-left: 15px;
   text-align: center;
+  flex-shrink: 0;
 }
 footer p {
   text-align: center;
