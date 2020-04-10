@@ -35,41 +35,44 @@ function selectAll(target) {
   }
 }
 
-function filterTags(tag) {
-  let tagId = tag.id;
-  let tags = document.getElementsByClassName("work");
-  let arr = [];
-  for (let i = 0; i < tags.length; i++) {
-    if (tags[i].classList.contains(tagId)) {
-      arr.push(tags[i]);
-    }
-  }
-  filterTagsStyle(arr);
-}
-
-function filterTagsStyle(arr) {
-  let tags = document.getElementsByClassName("work");
-  let workRow = document.getElementsByClassName("workRow");
-  if (arr.length > 0) {
-    for (let i = 0; i < arr.length; i++) {
-      arr[i].style.display = "block";
-    }
-  } else {
-    for (let i = 0; i < tags.length; i++) {
-      tags[i].style.display = "none";
-    }
-  }
-}
-
 // function filterTags(tag) {
 //   let tagId = tag.id;
+//   let tags = document.getElementsByClassName(tagId);
+//   filterTagsStyle(arr);
+// }
+
+// function filterTagsStyle(arr) {
 //   let tags = document.getElementsByClassName("work");
-//
-//   for (let i = 0; i < tags.length; i++) {
-//     if (tags[i].classList.contains(tagId)) {
-//       tags[i].style.display = "block";
-//     } else {
+//   let workRow = document.getElementsByClassName("workRow");
+//   if (arr.length > 0) {
+//     for (let i = 0; i < arr.length; i++) {
+//       arr[i].style.display = "block";
+//     }
+//   } else {
+//     for (let i = 0; i < tags.length; i++) {
 //       tags[i].style.display = "none";
+
 //     }
 //   }
 // }
+
+function filterWorkItems(tag) {
+  let tagId = tag.id;
+  let workItems = document.getElementsByClassName("work");
+  let countDisplayed = 0;
+  let nothingToShow = document.getElementById("nothingToShow");
+
+  for (let i = 0; i < workItems.length; i++) {
+    if (workItems[i].classList.contains(tagId)) {
+      workItems[i].style.display = "block";
+      countDisplayed++;
+    } else {
+      workItems[i].style.display = "none";
+    }
+  }
+  if (countDisplayed > 0) {
+    nothingToShow.style.display = "none";
+  } else {
+    nothingToShow.style.display = "block";
+  }
+}

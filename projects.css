@@ -121,6 +121,10 @@ h4 {
 .tag {
   margin-top: 0px;
 }
+
+#nothingToShow {
+  display: none;
+}
 @media only screen and (min-width: 768px) {
   .work {
     margin: 10px 20px;
