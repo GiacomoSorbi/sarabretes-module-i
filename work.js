@@ -29,9 +29,20 @@ function selectFilter(target) {
 
 function selectAll(target) {
   let filterOptions = document.getElementsByClassName("filterOptions");
-
   for (let i = 0; i < filterOptions.length; i++) {
     filterOptions[i].checked = target.checked;
     toggleOptions(filterOptions[i]);
+  }
+}
+
+function filterTags(tag) {
+  let tagId = tag.id;
+  let tags = document.getElementsByClassName("work");
+  for (let i = 0; i < tags.length; i++) {
+    if (tags[i].classList[1] == tagId) {
+      tags[i].style.display = "block";
+    } else {
+      tags[i].style.display = "none";
+    }
   }
 }

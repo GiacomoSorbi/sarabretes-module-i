@@ -1,0 +1,34 @@
+#contactForm {
+  width: 50%;
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  background-color: #fee3ed;
+}
+
+#contactForm .titleWithIcon {
+  text-align: center;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+form {
+  padding: 50px 50px 50px 50px;
+  margin: 0 auto;
+}
+
+input,
+textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 10px 0px;
+}
+
+textarea {
+  resize: none;
+  min-height: 100px;
+}

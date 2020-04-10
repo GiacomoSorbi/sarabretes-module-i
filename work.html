@@ -8,7 +8,7 @@
     <meta content="Sara Bretes" name="author" />
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
     <title>Saras Portfolio | About me</title>
-    <link href="navFooter.css" rel="stylesheet" />
+    <link href="stylesInCommon.css" rel="stylesheet" />
     <link href="work.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet" />
     <script src="https://kit.fontawesome.com/74df61d62d.js"></script>
@@ -28,7 +28,7 @@
                     <a href="about.html">About</a>
                 </li>
                 <li>
-                    <a href="">Work</a>
+                    <a href="work.html">Work</a>
                 </li>
                 <li>
                     <a href="contacts.html">Contacts</a>
@@ -53,59 +53,59 @@
 
         <section id="filters">
             <div id="ProjectArea">
-                <h4 class="area filterItem">Email Design</h4>
-                <h4 class="area filterItem">Landing Pages</h4>
-                <h4 class="area filterItem">Graphic Design</h4>
-                <h4 class="area filterItem">User Interface</h4>
-                <h4 class="area filterItem">Animated Advertising</h4>
+                <h4 onclick="filterTags(this)" class="area filterItem" id="emailDesign">Email Design</h4>
+                <h4 onclick="filterTags(this)" class="area filterItem" id="landingPages">Landing Pages</h4>
+                <h4 onclick="filterTags(this)" class="area filterItem" id="graphicDesign">Graphic Design</h4>
+                <h4 onclick="filterTags(this)" class="area filterItem" id="userInterface">User Interface</h4>
+                <h4 onclick="filterTags(this)" class="area filterItem" id="animatedAds">Animated Advertising</h4>
             </div>
             <div id="toolsUsed">
-                <h4 class="tools filterItem">Photoshop</h4>
-                <h4 class="tools filterItem">Illustrator</h4>
-                <h4 class="tools filterItem">After Effects</h4>
-                <h4 class="tools filterItem">Coda 2/ Visual Studio</h4>
-                <h4 class="tools filterItem">Figma</h4>
-                <h4 class="tools filterItem">Google Web Designer</h4>
+                <h4 onclick="filterTags(this)" class="tools filterItem" id="photoshop">Photoshop</h4>
+                <h4 onclick="filterTags(this)" class="tools filterItem" id="Illustrator">Illustrator</h4>
+                <h4 onclick="filterTags(this)" class="tools filterItem" id="afterEffects">After Effects</h4>
+                <h4 onclick="filterTags(this)" class="tools filterItem" id="visualStudio">Coda 2/ Visual Studio</h4>
+                <h4 onclick="filterTags(this)" class="tools filterItem" id="figma">Figma</h4>
+                <h4 onclick="filterTags(this)" class="tools filterItem" id="webDesigner">Google Web Designer</h4>
             </div>
     </div>
     </section>
     <div class="workRow">
-        <div class="work" id="work1">
+        <div class="work graphicDesign" id="work1">
             <div class="workInfo">
                 <p>Carolina Christening</p>
                 <p>Graphic Design</p>
             </div>
 
         </div>
-        <div class="work" id="work2">
+        <div class="work animatedAds" id="work2">
             <div class="workInfo">
                 <p>Charles Stanley Adwords Animation</p>
                 <p>Animated Adversiting</p>
             </div>
 
         </div>
-        <div class="work" id="work3">
+        <div class="work graphicDesign" id="work3">
             <div class="workInfo">
                 <p>Gender Pay Gap Report 2018</p>
                 <p>Graphic Design</p>
             </div>
 
         </div>
-        <div class="work" id="work4">
+        <div class="work animatedAds" id="work4">
             <div class="workInfo">
                 <p>Charles Stanley Direct Adwords Animation</p>
                 <p>Animated Adversiting</p>
             </div>
 
         </div>
-        <div class="work" id="work5">
+        <div class="work animatedAds" id="work5">
             <div class="workInfo">
                 <p>Charles Stanley Animated Gif</p>
                 <p>Animated Adversiting</p>
             </div>
 
         </div>
-        <div class="work" id="work6">
+        <div class="work userInterface" id="work6">
             <div class="workInfo">
                 <p>Quotemehappy.com</p>
                 <p>User Interface</p>

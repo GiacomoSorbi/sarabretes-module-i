@@ -13,26 +13,7 @@ p {
   width: 80%;
   margin: 0 auto;
 }
-.titleWithIcon {
-  margin-bottom: 50px;
-  margin-top: 80px;
-}
-#education h2,
-#workExperience h2,
-#tools h2,
-.fas,
-#fullCv h2 {
-  display: inline-block;
-  text-transform: uppercase;
-}
-#experience .fas,
-#tools .fas,
-#fullCv .fas {
-  font-size: 30px;
-  margin-right: 20px;
-  color: #c02e64;
-  position: relative;
-}
+
 #experience {
   position: relative;
   margin: 0 auto;
@@ -290,9 +271,7 @@ li#eloqua:after {
   .tableInfo {
     flex: 1;
   }
-  .titleWithIcon {
-    margin-top: 0px;
-  }
+
   #tools {
     width: 80%;
   }
