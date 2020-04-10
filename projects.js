@@ -38,11 +38,38 @@ function selectAll(target) {
 function filterTags(tag) {
   let tagId = tag.id;
   let tags = document.getElementsByClassName("work");
+  let arr = [];
   for (let i = 0; i < tags.length; i++) {
-    if (tags[i].classList[1] == tagId) {
-      tags[i].style.display = "block";
-    } else {
+    if (tags[i].classList.contains(tagId)) {
+      arr.push(tags[i]);
+    }
+  }
+  filterTagsStyle(arr);
+}
+
+function filterTagsStyle(arr) {
+  let tags = document.getElementsByClassName("work");
+  let workRow = document.getElementsByClassName("workRow");
+  if (arr.length > 0) {
+    for (let i = 0; i < arr.length; i++) {
+      arr[i].style.display = "block";
+    }
+  } else {
+    for (let i = 0; i < tags.length; i++) {
       tags[i].style.display = "none";
     }
   }
 }
+
+// function filterTags(tag) {
+//   let tagId = tag.id;
+//   let tags = document.getElementsByClassName("work");
+//
+//   for (let i = 0; i < tags.length; i++) {
+//     if (tags[i].classList.contains(tagId)) {
+//       tags[i].style.display = "block";
+//     } else {
+//       tags[i].style.display = "none";
+//     }
+//   }
+// }
