@@ -35,27 +35,6 @@ function selectAll(target) {
   }
 }
 
-// function filterTags(tag) {
-//   let tagId = tag.id;
-//   let tags = document.getElementsByClassName(tagId);
-//   filterTagsStyle(arr);
-// }
-
-// function filterTagsStyle(arr) {
-//   let tags = document.getElementsByClassName("work");
-//   let workRow = document.getElementsByClassName("workRow");
-//   if (arr.length > 0) {
-//     for (let i = 0; i < arr.length; i++) {
-//       arr[i].style.display = "block";
-//     }
-//   } else {
-//     for (let i = 0; i < tags.length; i++) {
-//       tags[i].style.display = "none";
-
-//     }
-//   }
-// }
-
 function filterWorkItems(tag) {
   let tagId = tag.id;
   let workItems = document.getElementsByClassName("work");
