@@ -42,7 +42,7 @@ function phoneValidation() {
 function messageValidation() {
   let messageText = document.getElementById("messageText").value;
   let errorTextMessage = document.getElementById("errorTextField");
-  let messageIsValid = messageText.length < 10;
+  let messageIsValid = messageText.length > 10;
 
   if (messageIsValid) {
     errorTextMessage.style.display = "none";
