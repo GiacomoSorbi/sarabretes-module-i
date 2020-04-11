@@ -61,17 +61,32 @@
       </div>
       <form>
         <label for="firstName">Full Name:</label>
-        <input type="text" id="fullName" placeholder="John Smith" />
+        <input
+          type="text"
+          id="fullName"
+          placeholder="John Smith"
+          oninput="fullNameValidation()"
+        />
         <p id="errorName">
           <i class="fas fa-exclamation"></i> Please insert a valid name.
         </p>
         <label for="email">Email:</label>
-        <input type="email" id="email" placeholder="me@johnsmith.com" />
+        <input
+          type="email"
+          id="email"
+          placeholder="me@johnsmith.com"
+          oninput="emailValidation()"
+        />
         <p id="errorEmail">
           <i class="fas fa-exclamation"></i> Please insert a valid email.
         </p>
         <label for="phoneNumber">Phone Number:</label>
-        <input type="tel" id="phoneNumber" placeholder="07700900796" />
+        <input
+          type="tel"
+          id="phoneNumber"
+          placeholder="07700900796"
+          oninput="phoneValidation()"
+        />
         <p id="errorPhone">
           <i class="fas fa-exclamation"></i> Please insert a valid phone number.
         </p>
@@ -79,12 +94,13 @@
         <textarea
           id="messageText"
           maxlength="500"
+          oninput="messageValidation()"
           placeholder="Please write your message here. Min 10 characters"
         ></textarea>
         <p id="errorTextField">
           <i class="fas fa-exclamation"></i> Please write your message here.
         </p>
-        <input type="button" value="Submit" onclick="formValidation()" />
+        <input type="button" value="Submit" onclick="fullFormValidation()" />
       </form>
     </section>
     <footer>
