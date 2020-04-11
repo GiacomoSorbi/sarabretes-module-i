@@ -53,12 +53,12 @@ function messageValidation() {
 }
 
 function fullFormValidation() {
-  if (
-    fullNameValidation() &&
-    emailValidation() &&
-    phoneValidation() &&
-    messageValidation()
-  ) {
+  let fullNameIsValid = fullNameValidation();
+  let emailIsValid = emailValidation();
+  let phoneIsValid = phoneValidation();
+  let messageIsValid = messageValidation();
+
+  if (fullNameIsValid && emailIsValid && phoneIsValid && messageIsValid) {
     console.log("form Submited");
   } else {
     console.log("there was a problem with your form");
