@@ -20,89 +20,93 @@
     <header>
       <nav>
         <div>
-          <a href="index.html"><strong>Sara Bretes</strong></a>
+          <a href="./index.html"><strong>Sara Bretes</strong></a>
         </div>
         <ul class="menus">
           <li>
-            <a href="index.html">Home</a>
+            <a href="./index.html">Home</a>
           </li>
           <li>
-            <a href="about.html">About</a>
+            <a href="./about.html">About</a>
           </li>
           <li>
-            <a href="projects.html">Projects</a>
+            <a href="./projects.html">Projects</a>
           </li>
           <li>
-            <a href="contacts.html">Contacts</a>
+            <a href="./contacts.html">Contacts</a>
           </li>
         </ul>
         <i class="fas fa-bars"></i>
       </nav>
     </header>
-    <section id="socialMedia">
-      <div class="titleWithIcon">
-        <i class="fas fa-user"></i>
-        <h2>Connect with me on social media:</h2>
-      </div>
-      <a href="https://twitter.com/Totinhas" target="_blank"
-        ><i class="fab fa-twitter"></i
-      ></a>
-      <a href="https://www.linkedin.com/in/sarabretes/" target="_blank"
-        ><i class="fab fa-linkedin-in"></i
-      ></a>
-      <a href="https://www.behance.net/sarabretes" target="_blank"
-        ><i class="fab fa-behance"></i
-      ></a>
-    </section>
-    <section id="contactForm">
-      <div class="titleWithIcon">
-        <i class="fas fa-envelope" aria-hidden="true"></i>
-        <h2>Contact me</h2>
-      </div>
-      <form>
-        <label for="firstName">Full Name:</label>
-        <input
-          type="text"
-          id="fullName"
-          placeholder="John Smith"
-          oninput="fullNameValidation()"
-        />
-        <p id="errorName">
-          <i class="fas fa-exclamation"></i> Please insert a valid name.
-        </p>
-        <label for="email">Email:</label>
-        <input
-          type="email"
-          id="email"
-          placeholder="me@johnsmith.com"
-          oninput="emailValidation()"
-        />
-        <p id="errorEmail">
-          <i class="fas fa-exclamation"></i> Please insert a valid email.
-        </p>
-        <label for="phoneNumber">Phone Number:</label>
-        <input
-          type="tel"
-          id="phoneNumber"
-          placeholder="07700900796"
-          oninput="phoneValidation()"
-        />
-        <p id="errorPhone">
-          <i class="fas fa-exclamation"></i> Please insert a valid phone number.
-        </p>
-        <label for="messageText">Message:</label>
-        <textarea
-          id="messageText"
-          maxlength="500"
-          oninput="messageValidation()"
-          placeholder="Please write your message here. Min 10 characters"
-        ></textarea>
-        <p id="errorTextField">
-          <i class="fas fa-exclamation"></i> Please write your message here.
-        </p>
-        <input type="button" value="Submit" onclick="fullFormValidation()" />
-      </form>
-    </section>
+    <main>
+      <section id="socialMedia">
+        <div class="titleWithIcon">
+          <i class="fas fa-user"></i>
+          <h2>Connect with me on social media:</h2>
+        </div>
+        <a href="https://twitter.com/Totinhas" target="_blank"
+          ><i class="fab fa-twitter"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/sarabretes/" target="_blank"
+          ><i class="fab fa-linkedin-in"></i
+        ></a>
+        <a href="https://www.behance.net/sarabretes" target="_blank"
+          ><i class="fab fa-behance"></i
+        ></a>
+      </section>
+      <section id="contactForm">
+        <div class="titleWithIcon">
+          <i class="fas fa-envelope" aria-hidden="true"></i>
+          <h2>Contact me</h2>
+        </div>
+        <form>
+          <label for="firstName">Full Name:</label>
+          <input
+            type="text"
+            id="fullName"
+            placeholder="John Smith"
+            oninput="fullNameValidation()"
+          />
+          <p id="errorName">
+            <i class="fas fa-exclamation"></i> Please insert a valid name.
+          </p>
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            placeholder="me@johnsmith.com"
+            oninput="emailValidation()"
+          />
+          <p id="errorEmail">
+            <i class="fas fa-exclamation"></i> Please insert a valid email.
+          </p>
+          <label for="phoneNumber">Phone Number:</label>
+          <input
+            type="tel"
+            id="phoneNumber"
+            placeholder="07700900796"
+            oninput="phoneValidation()"
+          />
+          <p id="errorPhone">
+            <i class="fas fa-exclamation"></i> Please insert a valid phone
+            number.
+          </p>
+          <label for="messageText">Message:</label>
+          <textarea
+            id="messageText"
+            maxlength="500"
+            oninput="messageValidation()"
+            placeholder="Please write your message here. Min 10 characters"
+          ></textarea>
+          <p id="errorTextField">
+            <i class="fas fa-exclamation"></i> Please write your message here.
+          </p>
+          <input type="button" value="Submit" onclick="fullFormValidation()" />
+          <h2 id="formSubmissionStatus"></h2>
+        </form>
+      </section>
+    </main>
     <footer>
       <p>Sara Bretes &copy; All rights Reserved</p>
       <div id="social">

@@ -57,10 +57,12 @@ function fullFormValidation() {
   let emailIsValid = emailValidation();
   let phoneIsValid = phoneValidation();
   let messageIsValid = messageValidation();
+  let formSubmissionMessage = document.getElementById("formSubmissionStatus");
 
   if (fullNameIsValid && emailIsValid && phoneIsValid && messageIsValid) {
-    console.log("form Submited");
+    formSubmissionMessage.innerHTML = "Form Submited Sucessfully";
   } else {
-    console.log("there was a problem with your form");
+    formSubmissionMessage.innerHTML =
+      "There was a problem with your form, please try again";
   }
 }

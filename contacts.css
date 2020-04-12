@@ -82,6 +82,13 @@ form > p {
   font-size: 14px;
 }
 
+#formSubmissionStatus {
+  font-size: 20px;
+  color: #c02e64;
+  font-weight: bold;
+  text-align: center;
+}
+
 @media only screen and (min-width: 1100px) {
   #contactForm {
     width: 50%;
