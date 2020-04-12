@@ -15,7 +15,6 @@
     />
     <script src="https://kit.fontawesome.com/74df61d62d.js"></script>
   </head>
-
   <body>
     <header>
       <nav>
@@ -57,36 +56,36 @@
       </section>
       <section id="contactForm">
         <div class="titleWithIcon">
-          <i class="fas fa-envelope" aria-hidden="true"></i>
+          <i aria-hidden="true" class="fas fa-envelope"></i>
           <h2>Contact me</h2>
         </div>
         <form>
-          <label for="firstName">Full Name:</label>
+          <label for="fullName">Full Name:</label>
           <input
-            type="text"
             id="fullName"
-            placeholder="John Smith"
             oninput="fullNameValidation()"
+            placeholder="John Smith"
+            type="text"
           />
           <p id="errorName">
             <i class="fas fa-exclamation"></i> Please insert a valid name.
           </p>
           <label for="email">Email:</label>
           <input
-            type="email"
             id="email"
-            placeholder="me@johnsmith.com"
             oninput="emailValidation()"
+            placeholder="me@johnsmith.com"
+            type="email"
           />
           <p id="errorEmail">
             <i class="fas fa-exclamation"></i> Please insert a valid email.
           </p>
           <label for="phoneNumber">Phone Number:</label>
           <input
-            type="tel"
             id="phoneNumber"
-            placeholder="07700900796"
             oninput="phoneValidation()"
+            placeholder="07700900796"
+            type="tel"
           />
           <p id="errorPhone">
             <i class="fas fa-exclamation"></i> Please insert a valid phone
@@ -102,7 +101,7 @@
           <p id="errorTextField">
             <i class="fas fa-exclamation"></i> Please write your message here.
           </p>
-          <input type="button" value="Submit" onclick="fullFormValidation()" />
+          <input onclick="fullFormValidation()" type="button" value="Submit" />
           <h2 id="formSubmissionStatus"></h2>
         </form>
       </section>
@@ -124,7 +123,7 @@
         ></a>
       </div>
     </footer>
-    <script src="javascript.js"></script>
+    <script src="mobileMenu.js"></script>
     <script src="contacts.js"></script>
   </body>
 </html>

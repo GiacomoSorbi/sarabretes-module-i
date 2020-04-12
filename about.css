@@ -254,8 +254,7 @@ li#eloqua:after {
   #education,
   #workExperience {
     display: inline-block;
-    width: 45%;
-    /* 50% each container minus the margin between containers*/
+    width: 45%; /* 50% each container minus the margin between containers*/
     display: flex;
     flex-direction: column;
   }
@@ -271,7 +270,6 @@ li#eloqua:after {
   .tableInfo {
     flex: 1;
   }
-
   #tools {
     width: 80%;
   }

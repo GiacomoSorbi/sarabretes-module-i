@@ -1,5 +1,4 @@
 function toggleNav() {
-
   let burger = document.querySelector(".fa-bars");
   let nav = document.querySelector(".menus");
   const navLinks = document.querySelectorAll(".menus li");
@@ -8,15 +7,4 @@ function toggleNav() {
     nav.classList.toggle("menusActive");
   });
 }
-
 toggleNav();
-/* Vertical Menus Toggle
-function verticalMenus() {
-  let mobileMenus = document.getElementById("mobileMenus");
-  if (mobileMenus.style.display === "none") {
-    mobileMenus.style.display = "block";
-  } else {
-    mobileMenus.style.display = "none";
-  }
-}
-*/

@@ -23,7 +23,6 @@ main {
 }
 #projectDescription {
   width: 80%;
-  align-items: top;
   position: relative;
   margin: 25px auto;
 }
