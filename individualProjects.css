@@ -1,5 +1,11 @@
+body {
+  display: flex;
+  flex-direction: column;
+}
+
 main {
   padding: 100px 50px 50px 50px;
+  flex: 1;
 }
 
 #projectMain {
@@ -33,6 +39,7 @@ main {
   font-style: oblique;
   font-size: 14px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 #projectAssets img {
@@ -40,6 +47,18 @@ main {
   display: block;
   position: relative;
   max-width: 100%;
+  box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.47);
+}
+
+iframe {
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.47);
+  -webkit-box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.47);
+  -moz-box-shadow: 0px 3px 7px -4px rgba(0, 0, 0, 0.47);
 }
 
 h3 {

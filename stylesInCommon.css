@@ -25,6 +25,11 @@ nav div {
   margin: 16px 16px;
 }
 
+.menus .currentPage {
+  border-bottom: 2px solid #c02e64;
+  color: #c02e64;
+}
+
 nav div > a {
   color: #003a51;
   text-decoration: none;
