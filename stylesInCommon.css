@@ -40,6 +40,7 @@ nav div > a {
   margin: 16px 16px;
   font-size: 20px;
   cursor: pointer;
+  display: block;
 }
 .menus {
   list-style: none;
@@ -148,43 +149,6 @@ footer #social a {
 }
 /* Styles for Tablet */
 
-@media screen and (min-width: 768px) {
-  nav {
-    padding: 0px 100px 0px 100px;
-  }
-  nav .menus {
-    display: flex;
-    list-style: none;
-    text-transform: capitalize;
-    justify-content: space-around;
-    width: 40%;
-    padding: 10px 10px;
-    margin: 16px 16px;
-    position: relative;
-    flex-direction: row;
-    top: 0;
-  }
-  .menus li {
-    padding: 0px 10px;
-  }
-  .fa-bars {
-    display: none !important;
-  }
-  .menusActive {
-    -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-    -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-  }
-  .menus li:hover {
-    background-color: #fee3ed;
-    cursor: pointer;
-  }
-  .menus li:hover a {
-    color: #c02e64;
-  }
-}
-/* Styles for Desktop */
-
 @media screen and (min-width: 1200px) {
   nav {
     padding: 0px 100px 0px 100px;
@@ -204,9 +168,7 @@ footer #social a {
   .menus li {
     padding: 0px 10px;
   }
-  .fa-bars {
-    display: none !important;
-  }
+
   .menusActive {
     -webkit-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
     -moz-box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
@@ -225,5 +187,9 @@ footer #social a {
   }
   .titleWithIcon {
     margin-top: 0px;
+  }
+
+  .fa-bars {
+    display: none !important;
   }
 }
