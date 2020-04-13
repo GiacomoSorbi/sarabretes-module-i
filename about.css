@@ -12,13 +12,14 @@ p {
   position: relative;
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 80px;
 }
 
 #experience {
   position: relative;
   margin: 0 auto;
   width: 80%;
-  padding: 100px 50px 100px 50px;
+  padding: 50px 50px 100px 50px;
 }
 /*table styles*/
 
@@ -264,6 +265,7 @@ li#eloqua:after {
   #experience {
     display: flex;
   }
+
   .tableInfo table {
     height: 100%;
   }
