@@ -65,38 +65,39 @@ h4 {
 }
 
 #work1 {
-  background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/8479341.54778fe9c87bf.png);
+  background-image: url("./imgs/christening1.png");
   height: 300px;
   background-size: cover;
 }
 
 #work2 {
-  background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/c1bbfc68346787.Y3JvcCw5MDAsNzAzLDAsNTU2.png);
+  background-image: url("./imgs/csad1.png");
   height: 300px;
   background-size: cover;
   background-position: right;
 }
 
 #work3 {
-  background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/c70e8168347095.Y3JvcCwyNDgwLDE5MzksMCww.png);
+  background-image: url("./imgs/genderreport1.png");
   height: 300px;
   background-size: cover;
 }
 
 #work4 {
-  background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/0bd51968348381.Y3JvcCw5NzksNzY2LDIxMCww.jpg);
+  background-image: url("./imgs/csdimg1.jpg");
   height: 300px;
   background-size: cover;
 }
 
 #work5 {
-  background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/17fbef68350195.Y3JvcCw4ODIsNjkwLDMwLDg1.jpg);
+  background-image: url("./imgs/gifad.jpg");
   height: 300px;
   background-size: cover;
+  background-position: center center;
 }
 
 #work6 {
-  background-image: url(https://mir-s3-cdn-cf.behance.net/projects/404/7594d472579253.Y3JvcCwxNTEzLDExODQsNjMsMA.jpg);
+  background-image: url("./imgs/quotemehappy1.jpg");
   height: 300px;
   background-size: cover;
 }
