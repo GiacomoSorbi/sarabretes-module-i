@@ -4,8 +4,21 @@ body {
   padding: 0px;
   font-family: "Dosis", sans-serif;
   height: 100%;
+  display: block;
+  position: relative;
 }
 
+main {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+header {
+  display: block;
+  position: relative;
+  width: 100%;
+}
 /* nav style */
 
 nav {
@@ -105,7 +118,7 @@ footer #social a {
   display: inline-block;
   position: relative;
   margin: 0 auto;
-  width: 5%;
+  width: 10%;
 }
 
 /* Button styles */
@@ -190,5 +203,9 @@ footer #social a {
 
   .fa-bars {
     display: none !important;
+  }
+
+  footer #social a {
+    width: 5%;
   }
 }

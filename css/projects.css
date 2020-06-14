@@ -65,39 +65,39 @@ h4 {
 }
 
 #work1 {
-  background-image: url("./imgs/christening1.png");
+  background-image: url("../imgs/christening1.png");
   height: 300px;
   background-size: cover;
 }
 
 #work2 {
-  background-image: url("./imgs/csad1.png");
+  background-image: url("../imgs/csad1.png");
   height: 300px;
   background-size: cover;
   background-position: right;
 }
 
 #work3 {
-  background-image: url("./imgs/genderreport1.png");
+  background-image: url("../imgs/genderreport1.png");
   height: 300px;
   background-size: cover;
 }
 
 #work4 {
-  background-image: url("./imgs/csdimg1.jpg");
+  background-image: url("../imgs/csdimg1.jpg");
   height: 300px;
   background-size: cover;
 }
 
 #work5 {
-  background-image: url("./imgs/gifad.jpg");
+  background-image: url("../imgs/gifad.jpg");
   height: 300px;
   background-size: cover;
   background-position: center center;
 }
 
 #work6 {
-  background-image: url("./imgs/quotemehappy1.jpg");
+  background-image: url("../imgs/quotemehappy1.jpg");
   height: 300px;
   background-size: cover;
 }
@@ -131,6 +131,13 @@ h4 {
 #nothingToShow {
   display: none;
 }
+
+.inputWrapper {
+  padding: 20px 20px;
+  display: inline-block;
+  position: relative;
+}
+
 @media only screen and (min-width: 768px) {
   .work {
     margin: 10px 20px;

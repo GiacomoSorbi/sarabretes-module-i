@@ -1,6 +1,6 @@
 function toggleNav() {
-  let burger = document.querySelector(".fa-bars");
-  let nav = document.querySelector(".menus");
+  const burger = document.querySelector(".fa-bars");
+  const nav = document.querySelector(".menus");
   const navLinks = document.querySelectorAll(".menus li");
 
   burger.addEventListener("click", function () {

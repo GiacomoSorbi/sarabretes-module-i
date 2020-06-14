@@ -8,7 +8,7 @@ body {
 }
 main {
   flex: 1;
-  background-image: url("./imgs/bg.jpg");
+  background-image: url("../imgs/bg.jpg");
   background-size: cover;
   -webkit-background-size: cover;
   -moz-background-size: cover;

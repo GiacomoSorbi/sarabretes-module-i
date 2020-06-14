@@ -1,6 +1,6 @@
 function toggleOptions(target) {
-  let filterId = target.id;
-  let filterItems = document.querySelectorAll("." + filterId);
+  const filterId = target.id;
+  const filterItems = document.querySelectorAll("." + filterId);
   for (let i = 0; i < filterItems.length; i++) {
     if (target.checked) {
       filterItems[i].style.display = "inline-block";
@@ -11,8 +11,8 @@ function toggleOptions(target) {
 }
 
 function selectFilter(target) {
-  let filterOptions = document.getElementsByClassName("filterOptions");
-  let selectAllOption = document.getElementById("all");
+  const filterOptions = document.getElementsByClassName("filterOptions");
+  const selectAllOption = document.getElementById("all");
   let count = 0;
   for (let i = 0; i < filterOptions.length; i++) {
     if (filterOptions[i].checked === true) {
@@ -28,7 +28,7 @@ function selectFilter(target) {
 }
 
 function selectAll(target) {
-  let filterOptions = document.getElementsByClassName("filterOptions");
+  const filterOptions = document.getElementsByClassName("filterOptions");
   for (let i = 0; i < filterOptions.length; i++) {
     filterOptions[i].checked = target.checked;
     toggleOptions(filterOptions[i]);
@@ -36,10 +36,10 @@ function selectAll(target) {
 }
 
 function filterWorkItems(tag) {
-  let tagId = tag.id;
-  let workItems = document.getElementsByClassName("work");
+  const tagId = tag.id;
+  const workItems = document.getElementsByClassName("work");
   let countDisplayed = 0;
-  let nothingToShow = document.getElementById("nothingToShow");
+  const nothingToShow = document.getElementById("nothingToShow");
 
   for (let i = 0; i < workItems.length; i++) {
     if (workItems[i].classList.contains(tagId)) {
