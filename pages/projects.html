@@ -16,7 +16,7 @@
     <script src="https://kit.fontawesome.com/74df61d62d.js"></script>
   </head>
 
-  <body>
+  <body onload="underlineMenu()">
     <header>
       <nav>
         <div>
@@ -24,16 +24,20 @@
         </div>
         <ul class="menus">
           <li>
-            <a href="../index.html">Home</a>
+            <a data-page="index.html" href="../index.html">Home</a>
           </li>
           <li>
-            <a href="../pages/about.html">About</a>
+            <a data-page="about.html" href="../pages/about.html">About</a>
           </li>
           <li>
-            <a class="currentPage" href="../pages/projects.html">Projects</a>
+            <a data-page="projects.html" href="../pages/projects.html"
+              >Projects</a
+            >
           </li>
           <li>
-            <a href="../pages/contacts.html">Contacts</a>
+            <a data-page="contacts.html" href="../pages/contacts.html"
+              >Contacts</a
+            >
           </li>
         </ul>
         <i aria-hidden="true" class="fas fa-bars" title="Burger menu"></i>
@@ -259,5 +263,6 @@
     </footer>
     <script src="../js/mobileMenu.js"></script>
     <script src="../js/projects.js"></script>
+    <script src="../js/menu.js"></script>
   </body>
 </html>
