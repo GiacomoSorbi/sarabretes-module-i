@@ -102,6 +102,15 @@ h4 {
   background-size: cover;
 }
 
+#work1.lazyBackground,
+#work2.lazyBackground,
+#work3.lazyBackground,
+#work4.lazyBackground,
+#work5.lazyBackground,
+#work6.lazyBackground {
+  background-image: none;
+  background-color: #fee3ed;
+}
 .workInfo {
   background-color: rgba(0, 58, 81, 0.9);
   width: 100%;

@@ -19,6 +19,10 @@ main {
 }
 
 /*Background style*/
+main.lazyBackground {
+  background-image: none;
+  background-color: #fee3ed;
+}
 
 #introText {
   width: 50%;
