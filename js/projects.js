@@ -40,7 +40,8 @@ function filterWorkItems(tag) {
   const workItems = document.getElementsByClassName("work");
   let countDisplayed = 0;
   const nothingToShow = document.getElementById("nothingToShow");
-
+  resetFilterItems();
+  tag.classList.add("selected");
   for (let i = 0; i < workItems.length; i++) {
     if (workItems[i].classList.contains(tagId)) {
       workItems[i].style.display = "block";
@@ -53,5 +54,13 @@ function filterWorkItems(tag) {
     nothingToShow.style.display = "none";
   } else {
     nothingToShow.style.display = "block";
+  }
+}
+
+function resetFilterItems() {
+  const filterItems = document.getElementsByClassName("filterItem");
+
+  for (let i = 0; i < filterItems.length; i++) {
+    filterItems[i].classList.remove("selected");
   }
 }

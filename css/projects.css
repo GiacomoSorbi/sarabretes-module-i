@@ -5,7 +5,10 @@ body {
 .filterItem {
   display: none;
 }
-
+.filterItem.selected {
+  color: #fee3ed;
+  text-decoration: underline;
+}
 main {
   flex: 1;
 }
